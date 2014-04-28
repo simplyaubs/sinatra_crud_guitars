@@ -1,0 +1,10 @@
+<h1><%= single_guitar[:maker] %></h1>
+
+
+<form action="/guitars/<%= single_guitar[:id] %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <input type="text" name="maker" value="<%= single_guitar[:maker] %>">
+  <input type="text" name="type" value="<%= single_guitar[:type] %>">
+  <input type="text" name="color" value="<%= single_guitar[:color] %>">
+  <input type="submit" value="Update Guitar">
+</form>

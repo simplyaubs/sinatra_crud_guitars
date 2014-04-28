@@ -2,6 +2,6 @@
 
 <ul>
   <% list_of_guitars.each do |guitar| %>
-  <li><a href="/guitars<%= guitar[:id] %>"><%= guitar[:maker] %></a></li>
+  <li><a href="/guitars/<%= guitar[:id] %>"><%= guitar[:maker] %></a></li>
     <% end %>
 </ul>
