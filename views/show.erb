@@ -8,3 +8,10 @@
   <input type="text" name="color" value="<%= single_guitar[:color] %>">
   <input type="submit" value="Update Guitar">
 </form>
+
+<form action="/guitars/<%= single_guitar[:id] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Destroy Guitar">
+</form>
+
+<a href="/">Back to list of guitars</a>
